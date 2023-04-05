@@ -5,9 +5,8 @@ from openai.embeddings_utils import get_embedding
 import json
 import os
 
-os.environ['OPENAI_KEY']= "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"
-openai.api_key = "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"
-os.environ['OPENAI_KEY']= "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"
+os.environ['OPENAI_KEY']= "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"
+openai.api_key = "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"
 OPENAI_KEY = openai.api_key
 PINECONE_KEY = "41b0a66d-ea54-4356-9ea6-98cf4208b85f"
 INDEX = 'openai-thehealthwallet-pdfs'
