@@ -1,0 +1,8 @@
+streamlit
+transformers
+sentence-transformers
+pinecone-client
+openai
+plotly
+matplotlib
+click==8.0
