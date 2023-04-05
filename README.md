@@ -1,0 +1,1 @@
+# pinecone_custom_openai
