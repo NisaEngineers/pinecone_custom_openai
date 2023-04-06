@@ -3,10 +3,10 @@ import pinecone
 import openai
 from openai.embeddings_utils import get_embedding
 import json
-import os
 
-os.environ['OPENAI_KEY']= "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"
-openai.api_key = "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"
+key = st.text_input(label= "OpenAI API Key" )
+st.write(key)
+openai.api_key = key
 OPENAI_KEY = openai.api_key
 PINECONE_KEY = "41b0a66d-ea54-4356-9ea6-98cf4208b85f"
 INDEX = 'openai-thehealthwallet-pdfs'
@@ -265,3 +265,4 @@ if search.button("Go!") or query != "":
             st.write(f"""
             {source['docs']} > {source['category']} > [{source['thread']}]({source['href']})
             """)
+
